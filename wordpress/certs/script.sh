@@ -43,3 +43,6 @@ mv "$file_path" "$destination"
 
 # Descargar imagenes necesarias para Docker
 docker-compose pull
+
+# Reinicia el servicio Docker para que haga efecto la configuracion del fichero daemon.json
+service docker restart
