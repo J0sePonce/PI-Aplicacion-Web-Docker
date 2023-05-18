@@ -41,7 +41,7 @@ Repositorio para mi Proyecto Integrado de ASIR, Aplicación Web con Respaldo de 
 
 <br>
 
-## Páginas disponibles
+## Páginas disponibles 📃
 
 - WordPress (dominio configurado en `/etc/hosts`): https://www.wordpress-jose.com o https://localhost
 - Prometheus: http://localhost:9090
@@ -113,7 +113,7 @@ docker-compose up -d
 
 <br>
 
-## Configuración de servicios
+## Configuración de servicios 🏗️
 
 Los servicios Duplicati (copias de seguridad) y Grafana (Visualización de datos) deben configurarse desde el cliente web para que cumplan con sus funciones. A continuación, se muestra una breve explicación para configurar cada uno de los servicios:
 
