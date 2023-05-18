@@ -31,13 +31,13 @@ aaa.
 
 ## Páginas disponibles
 
-- WordPress (dominio configurado en `/etc/hosts`): https://www.wordpress-jose.com
-- Prometheus: http://10.0.2.15:9090
-- Grafana: http://10.0.2.15:3000
-- Duplicati: http://10.0.2.15:8200
-- phpMyAdmin: http://10.0.2.15:9000
-- Cadvisor: http://10.0.2.15:8080
-- pushgateway: http://10.0.2.15:9091
+- WordPress (dominio configurado en `/etc/hosts`): https://www.wordpress-jose.com ó https://localhost
+- Prometheus: http://localhost:9090
+- Grafana: http://localhost:3000
+- Duplicati: http://localhost:8200
+- phpMyAdmin: http://localhost:9000
+- Cadvisor: http://localhost:8080
+- pushgateway: http://localhost:9091
 
 ## Despliegue 👨‍💻
 
@@ -58,7 +58,7 @@ nano /etc/hosts
 
 <br>
 
-> Una vez dentro del fichero añadir la dirección IP del equipo y el nombre de dominio que prefieras:
+> Una vez dentro del fichero añadir la dirección IP del equipo y el nombre de dominio que prefieras, por ejemplo:
 
 ```shell
 10.0.2.15 www.wordpress-jose.com
@@ -88,7 +88,7 @@ docker-compose up -d
 <br>
 
 **5. Acceder a los servicios desde el navegador** (Limpios, sin datos anteriores). <br>
-img
+![WordPress](https://github.com/J0sePonce/PI-Aplicacion-Web-Docker/assets/93582239/b01d331f-86d9-4276-a277-9f04b4bf3fcf)
 
 ## Licencia 📄
 
