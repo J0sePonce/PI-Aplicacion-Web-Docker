@@ -88,6 +88,9 @@ docker-compose up -d
 <br>
 
 **5. Acceder a los servicios desde el navegador** (Limpios, sin datos anteriores). <br>
+
+> Imagen de WordPress después de seguir la instalación
+
 ![WordPress](https://github.com/J0sePonce/PI-Aplicacion-Web-Docker/assets/93582239/b01d331f-86d9-4276-a277-9f04b4bf3fcf)
 
 ## Licencia 📄
