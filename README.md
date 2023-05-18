@@ -10,12 +10,12 @@ aaa.
 
 ## Funcionalidades ⚙️
 
-`Utilidad 1:` Portabilidad y fácil despliegue gracias a la tecnología Docker. <br>
-`Utilidad 2:` Aplicación web contenerizada con datos persistentes. <br>
-`Utilidad 3:` Administración de base de datos a través de cliente web. <br>
-`Utilidad 4:` Respaldo de datos. <br>
-`Utilidad 5:` Monitorización de contenedores. <br>
-`Utilidad 6:` Visualización datos de monitorización a través de cliente web. <br>
+✅ `Utilidad 1:` Portabilidad y fácil despliegue gracias a la tecnología Docker. <br>
+✅ `Utilidad 2:` Aplicación web contenerizada con datos persistentes. <br>
+✅ `Utilidad 3:` Administración de base de datos a través de cliente web. <br>
+✅ `Utilidad 4:` Respaldo de datos. <br>
+✅ `Utilidad 5:` Monitorización de contenedores. <br>
+✅ `Utilidad 6:` Visualización datos de monitorización a través de cliente web. <br>
 
 ## Tecnologías utilizadas 🛠️
 
@@ -27,6 +27,7 @@ aaa.
 * [Duplicati](https://www.duplicati.com/) - Respaldo de datos
 * [Prometheus](https://prometheus.io/) - Sistema de monitorización
 * [Grafana](https://grafana.com/) - Visualización de datos
+* [cAdvisor](https://hub.docker.com/r/google/cadvisor/) - Monitorización de recursos de contenedores
 
 ## Páginas disponibles
 
