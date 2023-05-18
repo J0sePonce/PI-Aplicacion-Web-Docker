@@ -73,6 +73,10 @@ git clone https://github.com/J0sePonce/PI-Aplicacion-Web-Docker.git
 
 <br>
 
+> En caso de no tener instalado la herramienta Git utilizar: `apt install git -y`
+
+<br>
+
 **3. Ejecutar script:** En la carpeta /wordpress/certs, ejecutar el comando. <br>
 ```shell
 bash script.sh
