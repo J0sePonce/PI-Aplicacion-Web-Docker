@@ -87,7 +87,7 @@ git clone https://github.com/J0sePonce/PI-Aplicacion-Web-Docker.git
 
 <br>
 
-> En caso de NO tener instalado la herramienta Git: `apt install git -y`
+> En caso de NO tener instalado la herramienta Git: `apt update && apt install git -y`
 
 <br>
 
@@ -110,6 +110,28 @@ docker-compose up -d
 > Imagen de WordPress después de su instalación
 
 ![WordPress](https://github.com/J0sePonce/PI-Aplicacion-Web-Docker/assets/93582239/b01d331f-86d9-4276-a277-9f04b4bf3fcf)
+
+<br>
+
+## Configuración de servicios
+
+Los servicios Duplicati (copias de seguridad) y Grafana (Visualización de datos) deben configurarse desde el cliente web para que cumplan con sus funciones. A continuación, se muestra una breve explicación para configurar cada uno de los servicios:
+
+▶️ <b>Duplicati:</b>
+- Accedemos a través del navegador a la dirección http://localhost:8200, pulsamos **MENÚ** > `Añadir copia de seguridad`.
+- Seleccionamos la opción `Configurar nueva copia de seguridad`, pulsamos **Siguiente** y configuramos el nombre de la tarea y la contraseña.
+- En **Tipo de Almacenamiento** seleccionamos `Google Drive`, escribimos el nombre de la carpeta de Drive en la que se guardarán nuestras copias de seguridad y pulsamos sobre `AuthID` para dar permisos a Duplicati. Pulsamos `Conexión de prueba` > **OK** (si la carpeta no existe pulsamos **SI** para crearla).
+- Buscamos la carpeta `source` y la seleccionamos.
+- Por último, configuramos cuando queremos que se realizen las copias de seguridad.
+
+<br>
+
+▶️ <b>Grafana:</b> <br>
+- Accedemos a través del navegador a la dirección `http://localhost:3000` e ingresamos las credenciales configuradas en el fichero docker-compose.yml.
+- Pulsamos <b>Data Source</b> > `Prometheus`, añadimos la dirección IP y el puerto de Prometheus.
+- Pulsamos en el menú sobre <b>Dashboards</b>, ahora pulsamos `New > Import`.
+- Subimos el .json con la configuración de nuestro dashboard, luego seleccionamos `Prometheus` y pulsamos `Import`.
+- Por último, configuramos el rango de tiempo del tablero pulsando sobre el icono 🕘.
 
 <br>
 
