@@ -2,20 +2,30 @@
 Repositorio para mi Proyecto Integrado de ASIR, Aplicación Web con Respaldo de Datos y Monitorización en Docker. Realizado por Jose Ponce.
 <hr>
 
-## Descripción del proyecto 📋
+# Descripción del proyecto 📋
 
 <p align="justify">
-aaa.
+  Este proyecto es una solución desarrollada como parte del <b>Proyecto Integrado de ASIR</b>. El objetivo principal es el de proporcionar una aplicación web con datos persistentes, el respaldo de datos y capacidades de monitorización, todo ello implementado utilizando contenedores Docker para facilitar el despliegue y su portabilidad.
 </p>
+
+<p align="justify">
+  <b>El repositorio contiene lo necesario para:</b>
+  <br>
+  Desplegar una aplicación web (<i>WordPress, MariaDB</i>) con datos persistentes y la posibilidad de acceder a través de https utilizando certificados autofirmados (<i>Nginx</i>). Administrar y visualizar la base de datos a través del navegador (<i>phpMyAdmin</i>). Realizar copias de seguridad a través del navegador y que se almacenen en Drive (<i>Duplicati</i>). Sistema de monitorización para recopilar información del sistema y los contenedores, visualizando los datos a través del navegador (<i>Prometheus, Grafana, cAdvisor, etc</i>).
+</p>
+
+<br>
 
 ## Funcionalidades ⚙️
 
 ✅ `Utilidad 1:` Portabilidad y fácil despliegue gracias a la tecnología Docker. <br>
 ✅ `Utilidad 2:` Aplicación web contenerizada con datos persistentes. <br>
 ✅ `Utilidad 3:` Administración de base de datos a través de cliente web. <br>
-✅ `Utilidad 4:` Respaldo de datos. <br>
+✅ `Utilidad 4:` Respaldo de datos en Google Drive utilizando Duplicati. <br>
 ✅ `Utilidad 5:` Monitorización de contenedores. <br>
 ✅ `Utilidad 6:` Visualización datos de monitorización a través de cliente web. <br>
+
+<br>
 
 ## Tecnologías utilizadas 🛠️
 
@@ -29,6 +39,8 @@ aaa.
 * [Grafana](https://grafana.com/) - Visualización de datos
 * [cAdvisor](https://hub.docker.com/r/google/cadvisor/) - Monitorización de recursos de contenedores
 
+<br>
+
 ## Páginas disponibles
 
 - WordPress (dominio configurado en `/etc/hosts`): https://www.wordpress-jose.com ó https://localhost
@@ -38,6 +50,8 @@ aaa.
 - phpMyAdmin: http://localhost:9000
 - Cadvisor: http://localhost:8080
 - pushgateway: http://localhost:9091
+
+<br>
 
 ## Despliegue 👨‍💻
 
@@ -73,7 +87,7 @@ git clone https://github.com/J0sePonce/PI-Aplicacion-Web-Docker.git
 
 <br>
 
-> En caso de no tener instalado la herramienta Git utilizar: `apt install git -y`
+> En caso de NO tener instalado la herramienta Git: `apt install git -y`
 
 <br>
 
@@ -91,11 +105,13 @@ docker-compose up -d
 
 <br>
 
-**5. Acceder a los servicios desde el navegador** (Limpios, sin datos anteriores). <br>
+**5. Acceder a los servicios desde el navegador** (Sin datos anteriores, se deberán configurar). <br>
 
-> Imagen de WordPress después de seguir la instalación
+> Imagen de WordPress después de su instalación
 
 ![WordPress](https://github.com/J0sePonce/PI-Aplicacion-Web-Docker/assets/93582239/b01d331f-86d9-4276-a277-9f04b4bf3fcf)
+
+<br>
 
 ## Licencia 📄
 
