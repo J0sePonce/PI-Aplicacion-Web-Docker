@@ -43,7 +43,7 @@ Repositorio para mi Proyecto Integrado de ASIR, Aplicación Web con Respaldo de 
 
 ## Páginas disponibles
 
-- WordPress (dominio configurado en `/etc/hosts`): https://www.wordpress-jose.com ó https://localhost
+- WordPress (dominio configurado en `/etc/hosts`): https://www.wordpress-jose.com o https://localhost
 - Prometheus: http://localhost:9090
 - Grafana: http://localhost:3000
 - Duplicati: http://localhost:8200
