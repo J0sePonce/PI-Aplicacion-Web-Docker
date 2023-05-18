@@ -12,4 +12,4 @@ scrape_configs:
     scrape_interval: 5s
     static_configs:
     - targets:
-      - 0.0.0.0:9323 # Direccion IP del equipo
+      - 10.0.2.15:9323 # Direccion IP del equipo
