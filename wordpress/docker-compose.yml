@@ -73,7 +73,7 @@ services:
       - PGID=0
       - TZ=Europe/Madrid
     volumes:
-      - ./wordpress/duplicati_config:/config # Volumen configuracion Duplicati
+      - /PI-Aplicacion-Web-Docker/wordpress/duplicati_config:/config # Volumen configuracion Duplicati
       - /PI-Aplicacion-Web-Docker/wordpress:/source # Volumen de los ficheros a respaldar
     ports:
       - "8200:8200"
