@@ -127,7 +127,7 @@ Los servicios Duplicati (copias de seguridad) y Grafana (Visualización de datos
 <br>
 
 ▶️ <b>Grafana:</b> <br>
-- Accedemos a través del navegador a la dirección `http://localhost:3000` e ingresamos las credenciales configuradas en el fichero docker-compose.yml.
+- Accedemos a través del navegador a la dirección http://localhost:3000 e ingresamos las credenciales configuradas en el fichero docker-compose.yml.
 - Pulsamos <b>Data Source</b> > `Prometheus`, añadimos la dirección IP y el puerto de Prometheus.
 - Pulsamos en el menú sobre <b>Dashboards</b>, ahora pulsamos `New > Import`.
 - Subimos el .json con la configuración de nuestro dashboard, luego seleccionamos `Prometheus` y pulsamos `Import`.
