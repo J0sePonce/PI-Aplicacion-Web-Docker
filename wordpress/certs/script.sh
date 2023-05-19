@@ -47,3 +47,6 @@ docker-compose pull
 # Reinicia el servicio Docker para que haga efecto la configuracion del fichero daemon.json
 service docker stop
 service docker start
+
+# Grafana, genio (Cambia los permisos para la carpeta del volumen de Grafana, ya que no lo hace automaticamente Grafana)
+chmod -R 777 ./grafana_data
