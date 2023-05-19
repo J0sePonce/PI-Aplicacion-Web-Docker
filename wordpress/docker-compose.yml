@@ -118,7 +118,7 @@ services:
     image: prom/pushgateway
     container_name: pushgateway
     ports:
-    - "9091:9091"
+      - "9091:9091"
     deploy:
       replicas: 1
       restart_policy:
@@ -136,14 +136,14 @@ services:
     image: grafana/grafana
     container_name: grafana
     ports:
-    - "3000:3000"
+      - "3000:3000"
     volumes:
-    - ./grafana_data:/var/lib/grafana
+      - ./grafana_data:/var/lib/grafana
     environment:
-    - GF_SECURITY_ADMIN_PASSWORD=password
+      - GF_SECURITY_ADMIN_PASSWORD=password
     depends_on:
-    - prometheus
-    - cadvisor
+      - prometheus
+      - cadvisor
     deploy:
       replicas: 1
       restart_policy:
@@ -165,14 +165,14 @@ volumes:
       type: none
       device: ./wordpress_data
 
-wordpress_grafana_data:
+  wordpress_grafana_data:
     driver: local
     driver_opts:
       o: bind
       type: none
       device: ./grafana_data
 
-wordpress_prometheus_data:
+  wordpress_prometheus_data:
     driver: local
     driver_opts:
       o: bind
