@@ -48,5 +48,6 @@ docker-compose pull
 service docker stop
 service docker start
 
-# Grafana, genio (Cambia los permisos para la carpeta del volumen de Grafana, ya que no lo hace automaticamente Grafana)
-chmod -R 777 ./grafana_data
+# Cambia los permisos para la carpeta del volumen de Grafana, ya que no lo hace automaticamente
+chmod -R 777 ../grafana_data
+chmod -R 777 ../prometheus_data
