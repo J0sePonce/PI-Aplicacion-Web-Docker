@@ -90,6 +90,7 @@ services:
     command:
       - --config.file=/etc/prometheus/prometheus.yml
     volumes:
+      - ./prometheus_data:/prometheus
       - ./prometheus.yml:/etc/prometheus/prometheus.yml
     depends_on:
       - cadvisor
@@ -136,6 +137,8 @@ services:
     container_name: grafana
     ports:
     - "3000:3000"
+    volumes:
+    - ./grafana_data:/var/lib/grafana
     environment:
     - GF_SECURITY_ADMIN_PASSWORD=password
     depends_on:
@@ -161,3 +164,17 @@ volumes:
       o: bind
       type: none
       device: ./wordpress_data
+
+wordpress_grafana_data:
+    driver: local
+    driver_opts:
+      o: bind
+      type: none
+      device: ./grafana_data
+
+wordpress_prometheus_data:
+    driver: local
+    driver_opts:
+      o: bind
+      type: none
+      device: ./prometheus_data
